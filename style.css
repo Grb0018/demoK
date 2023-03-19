@@ -120,22 +120,7 @@ width:100vw;
     background-color: rgb(169, 169, 169);
     box-shadow: 1px 1px 10px rgb(22, 22, 22);
 }
-@media screen and (max-width: 1020px) {
-    #slider{
-        height: 37vw;
-    }
-}
-@media screen and (max-width: 769px) {
-    #slider{
-        height: 60vw;
-    }
-}
-
-@media screen and (max-width: 481px) {
-    #slider{
-        height: 90vw;
-    }
-}  
+  
 #info{
     position: relative;
     height: 36vw;
@@ -256,7 +241,7 @@ width:100vw;
     justify-content: space-around;
 }
 .contentVission p{
-    font-size: 1vw;
+    font-size: 1.2vw;
 }
 .logoContent{
     position: absolute;
@@ -606,7 +591,7 @@ footer{
     justify-content: space-evenly;
     align-items: center;
 }
-#contactFooter img{
+#contactFooter img:nth-child(2),#contactFooter img:nth-child(3){
     width: 2vw;
     height: 2vw;
     margin: 0.5vw;
@@ -616,4 +601,526 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+#whatsappFooter{
+    width: 2vw;
+    height: 2vw;
+    margin: 0.5vw;
+    filter:invert(0) drop-shadow(2px 4px 6px black);
+}
+#MobileMenu{
+    display: none;
+}
+#MobileMenu img{
+    width: 25px;
+}
+#mobileMenu{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 53px;
+    width: 94%;
+    background: rgb(241 246 246);
+    z-index: 2;
+    padding: 3vw;
+    box-shadow: 0px 1px 1px rgb(148, 146, 146);
+}
+#mobileMenu a{
+    text-decoration: none;
+    padding:1vw;
+    border-bottom: 1px solid rgb(241, 219, 211);
+    color:#222222;
+    font-weight: bold;
+    background: rgb(255,255,255);
+    padding-bottom: 1.3vw;
+    margin-bottom: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#alwaysWhatsapp{
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    width:30px;
+    height:30px;
+    border-radius: 20vw;
+    filter: drop-shadow(2px 2px 4px black);
+    bottom: 120px;
+    right:10px;
+    padding:10px;
+    background: #efeded;
+}
+#alwaysCall{
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    width:30px;
+    height:30px;
+    border-radius: 20vw;
+    filter: drop-shadow(2px 2px 4px black);
+    bottom: 50px;
+    right:10px;
+    background: #efeded;
+    padding:10px;
+}
+#MobileMenubtn{
+    display: none;
+}
+
+@media screen and (max-width: 1020px) {
+    #slider{
+        height: 37vw;
+    }
+}
+@media screen and (max-width: 769px) {
+    #slider{
+        height: 60vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #slider{
+        height: 90vw;
+    }
+    #slider #images span img {
+        height: 100vw;
+        width: auto;
+    }
+    #slider #images span:last-child {
+        display: flex;
+        width: 100vw;
+        background-size: cover;
+        position: relative;
+        height: 41vh;
+        object-fit: fill;
+    }
+    #tag4,#tag3,#tag2,#tag1{
+        right:unset;
+        top: 200px;
+        font-size:50px;
+        line-height: 40px;
+        left:10px;
+        text-align: left;
+    }
+    #block1{
+        width: 20px;
+        height: 20px;
+        top: 10vw;
+        left: 3px;
+    }
+    #block2{
+        width: 15px;
+        height: 15px;
+        top: 5px;
+        right: 8px;
+    }
+    #why h1{
+        font-size: 45px;
+    }
+    #why h2{
+        margin: 20px 0px;
+    }
+    #why{
+        margin-top: 50px;
+    }
+    #menus{
+        display: none;
+    }
+    #menu #conatcts {
+        display: none;
+    }
+    #MobileMenubtn{
+        display: block;
+    }
+    #MobileMenubtn img{
+        width: 25px;
+    }
+    #logo{
+        margin-left: 1vw;
+    }
+    #logo img{
+        width: 40px;
+    }
+    #info{
+        flex-direction: column;
+        height: 550px;
+    }
+    #info img:nth-child(1){
+        height: 450px;
+        width: fit-content;
+    }
+    #information{
+        top: 303px;
+        width: 500px;
+        height: 500px;
+        rotate: 255deg;
+    }
+    .contentVission {
+        position: absolute;
+        border: 0.2vw solid #dd1b03;
+        padding: 3vw;
+        right: 6vw;
+        top: 311px;
+        z-index: 2;
+        height: 36%;
+        width: 80%;
+        color: #1d1d1d;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    #info h3 {
+        font-family: Oswald;
+        font-size: 25px;
+    }
+    .contentVission p {
+        font-size: 12px;
+    }
+    .logoContent {
+        position: absolute;
+        width: 60px;
+        top: 290px;
+        right: 3vw;
+        z-index: 3;
+        background: #fffcf8;
+    }
+    #whyContent {
+        position: relative;
+        margin: 2vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #fffbf9;
+        margin-top: 25px;
+    }
+    #whyContent p {
+        font-family: 'Oswald';
+        font-size: 35px;
+        margin: 2vw;
+        color: #252525;
+        font-weight: bold;
+    }
+    #whyUs {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        margin-bottom: 3vw;
+        text-align: left;
+        flex-direction: column;
+    }
+    #whyUs1, #whyUs2, #whyUs3, #whyUs4 {
+        display: flex;
+        flex-direction: column;
+        font-family: 'League Spartan';
+        align-items: center;
+        margin: 40px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #8d8a8a;
+    }
+    #whyUs img {
+        width: 60px;
+        padding: 0.4vw;
+        border-radius: 1vw;
+        background: white;
+        box-shadow: 0px 0px 60px #fc480526;
+    }
+    #whyUs1 p, #whyUs2 p, #whyUs3 p, #whyUs4 p {
+        font-family: 'Source Sans Pro', sans-serif;
+        padding: 0;
+        margin: 0;
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 1vw;
+    }
+    #whyContent text {
+        font-size: 18px;
+    }
+    #whyContent text {
+        font-size: 18px;
+    }
+    #recentProject h3 {
+        font-size: 30px;
+        letter-spacing: 5px;
+        word-spacing: 10px;
+        margin: 1vw;
+        padding-bottom: 1vw;
+        border-bottom: 1px solid orangered;
+    }
+    #projectItem {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        margin: 1vw 0;
+        flex-direction: column;
+    }
+    #project1, #project2, #project3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0px 0px 10px #bbb7b7;
+        overflow: hidden;
+        max-width: 79%;
+        padding: 1vw;
+        margin-bottom: 40px;
+    }
+    #project1 #imageContainer, #project2 #imageContainer, #project3 #imageContainer {
+        height: 300px;
+        object-fit: cover;
+        overflow: hidden;
+        width: 95%;
+    }
+    #project1 img, #project2 img {
+        height: 300px;
+    }
+    .tick {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background: white;
+        border-radius: 20vw;
+        top: 13vw;
+        left: 2.5vw;
+        animation: tick 2s linear infinite;
+    }
+    .tickname {
+        position: absolute;
+        width: max-content;
+        height: max-content;
+        background: white;
+        border-radius: 20vw;
+        top: 18vw;
+        color: orangered;
+        padding: 10px 5px;
+        left: 3.5vw;
+        animation: tick 2s linear infinite;
+        font-size: 15px;
+    }
+    #project1 h4, #project2 h4, #project3 h4 {
+        padding: 0.6vw;
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+        font-family: 'Source Sans Pro';
+        color: #222222;
+        font-weight: bold;
+    }
+    #project1info, #project2info, #project3info {
+        display: block;
+        position: relative;
+        border: 1px solid #d1c9c7;
+        padding: 0.6vw;
+        background: #fff9f3;
+        font-size: 16px;
+        text-align: left;
+        margin-top: 15px;
+    }
+    .arrowUp {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background: #fff9f3;
+        border-top: 1px solid #d1c9c7;
+        top: -6px;
+        border-left: 1px solid #d1c9c7;
+        left: 50%;
+        rotate: 45deg;
+    }
+    #decide p {
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: 'League Spartan';
+        line-height: 40px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid black;
+    }
+    #contactInfos {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        background: #fff8f0;
+        padding: 15px;
+        flex-direction: column;
+    }
+    .contactItem {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 0.2vw solid orangered;
+        font-size: 18px;
+        font-weight: bold;
+        background: white;
+        padding: 0 2vw;
+        height: 85px;
+        user-select: none;
+        -webkit-user-drag: none;
+        cursor: pointer;
+        margin-bottom: 30px;
+    }
+    #whatsapp img {
+        width: 50px;
+        margin-bottom: 0.5vw;
+        margin-right: 20px;
+    }
+    #telephone img {
+        width: 40px;
+        margin-bottom: 0.5vw;
+        margin-right: 20px;
+    }
+    #email img {
+        width: 45px;
+        margin-bottom: 0.5vw;
+        margin-right: 20px;
+    }
+    #location {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+    }
+    #location p {
+        margin: 1vw;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: 'League Spartan';
+    }
+    #location iframe {
+        width: 98%;
+        height: 400px;
+    }
+    .footer {
+        position: relative;
+        bottom: -80px;
+        width: auto;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: relative;
+        background: #222222;
+    }
+    #footer1 {
+        margin-left: 0.8vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #logoFooter {
+        display: flex;
+        background: white;
+        padding: 0.5vw;
+        width: 150px;
+        height: 150px;
+        border-radius: 10vw;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    #logoFooter img {
+        width: 100px;
+    }
+    #aboutUs {
+        padding: 0 1vw;
+        color: #e2dfdf;
+        width: 96%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: -webkit-left;
+    }
+    #aboutUs h2 {
+        font-family: 'Oswald';
+        letter-spacing: 0.2vw;
+        border-bottom: 1px solid orangered;
+        font-size: 25px;
+        color: white;
+    }
+    #aboutUs text {
+        font-size: 18px;
+    }
+    #footer2{
+        margin-top: 50px;
+        width: 98%;
+    }
+    #quickLink {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    #fotterItem p {
+        font-family: 'Oswald';
+        letter-spacing: 0.2vw;
+        border-bottom: 1px solid orangered;
+        font-weight: bold;
+        font-size: 25px;
+        color: white;
+    }
+    #footerMenu {
+        display: flex;
+        max-width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    #quicklink a {
+        text-decoration: none;
+        color: #e2dfdf;
+        font-size: 15px;
+        margin: 12px;
+        background: #d3d3d321;
+        padding: 10px 15px;
+        border-radius: 0.5vw;
+    }
+    #whatsappFooter {
+        width: 25px;
+        height: 25px;
+        margin: 15px;
+        filter: invert(0) drop-shadow(2px 4px 6px black);
+    }
+    #contactFooter img:nth-child(2), #contactFooter img:nth-child(3) {
+        width: 28px;
+        height: 28px;
+        margin: 10px;
+        filter: drop-shadow(2px 4px 6px white) invert(1);
+    }
+    .footerContact{
+        
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        
+    }
+    #address {
+        color: #e2dfdf;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 25px;
+    }
+    #address address {
+        margin: 10px;
+        font-size: 18px;
+    }
+    #copyright {
+        height: 50px;
+        color: #8d8d8d;
+        background: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+    }
+    #fotterItem{
+        height: max-content;
+        flex-direction: column;
+        align-items: center;
+    }
 }
