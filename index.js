@@ -83,4 +83,96 @@ if( dotClick==false){
     }
 }
   },7000)
+  var touchGet=false;
+  var x=0;
+  document.getElementById('slider').ontouchmove=(e)=>{
+    if(touchGet==false){
+        x = parseInt(e.touches[0].clientX);
+        touchGet=true;
+    }
+    
+    var finalx = parseInt(e.touches[0].clientX);
+    document.getElementById('slider').ontouchend=(ev)=>{
+        touchGet=false;
+        if(finalx>x && dotClick==false){
+            dotClick=true;
+            switch (slideItem) {
+                case 1:
+                slideItem=4;
+                slider.style.marginLeft='-300vw';
+                dotChange(dot4)
+                setTimeout(()=>{dotClick=false;},1200)
+                break;
+                case 2:
+                    slideItem=1;
+                    slider.style.marginLeft='00vw';
+                    dotChange(dot1)
+                    setTimeout(()=>{dotClick=false;},1200)
+                break;           
+                case 3:
+                    slideItem=2;
+                    slider.style.marginLeft='-100vw';
+                    dotChange(dot2)
+                    setTimeout(()=>{dotClick=false;},1200)
+                break; 
+                case 4:
+                    slideItem=3;
+                    slider.style.marginLeft='-200vw';
+                    dotChange(dot3)
+                    setTimeout(()=>{dotClick=false;},1200)
+                break;
+            default:
+                break;
+        }
+
+        }else{
+            dotClick=true;
+            switch (slideItem) {
+                
+                case 1:
+                    slideItem=2;
+                    slider.style.marginLeft='-100vw';
+                    dotChange(dot2)
+                    setTimeout(()=>{dotClick=false;},1200)
+                break;
+                case 2:
+                    slideItem=3;
+                    slider.style.marginLeft='-200vw';
+                    dotChange(dot3)
+                    setTimeout(()=>{dotClick=false;},1200)
+                break;           
+                case 3:
+                    slideItem=4;
+                    slider.style.marginLeft='-300vw';
+                    dotChange(dot4)
+                    setTimeout(()=>{dotClick=false;},1200)
+                break; 
+                case 4:
+                    slideItem=1;
+                    slider.style.marginLeft='00vw';
+                    dotChange(dot1)
+                    setTimeout(()=>{dotClick=false;},1200)
+                break;
+            default:
+                break;
+        }
+        }
+    }
 }
+}
+var menu=false;
+const menuClick=()=>{
+    document.getElementById('MobileMenubtn').onclick=()=>{
+        if(menu==false){
+            menu=true;
+            document.getElementById('MobileMenubtn').innerHTML=`<img src="./icon-pack/close.png" alt="Mobile Menu" >`;
+            document.getElementById('mobileMenu').style.display='flex';
+        }else{
+            menu=false;
+            document.getElementById('MobileMenubtn').innerHTML=`<img src="./icon-pack/menu-burger.png" alt="Mobile Menu" >`;
+            document.getElementById('mobileMenu').style.display='none';
+        }
+    }
+};
+menuClick();
+
