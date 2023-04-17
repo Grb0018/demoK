@@ -185,8 +185,8 @@ form button {
     filter: drop-shadow(2px 4px 6px black);
 }
 .mailAvatar {
-    height: fit-content;
-    width: 90vw;
+width: 90vw;
+    height: 80vw;
 }
 .otherContact {
     display: flex;
