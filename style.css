@@ -7,10 +7,11 @@
     -webkit-user-drag: none;
 }
 body{
-    overflow: hidden;
+    position: relative;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
     overflow-x: hidden;
-    scroll-behavior: smooth;
-    overflow-y: scroll;
 }
 a{
     text-decoration: unset;
