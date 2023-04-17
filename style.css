@@ -6,7 +6,7 @@
     user-select: none;
     -webkit-user-drag: none;
 }
-body{
+body, html{
     position: relative;
     width: 100vw;
     margin: 0;
